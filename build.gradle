@@ -12,9 +12,10 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    testImplementation("io.qameta.allure:allure-junit5:2.24.0")
+    implementation group: 'io.qameta.allure', name: 'allure-junit5', version: '2.25.0'
     testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '5.4.0'
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
+
 }
 
 test {
